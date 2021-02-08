@@ -12,6 +12,6 @@ while True:
         break
     elif player == "yes":
         print("Very well, good luck! ")
-        print(random.randint(0, 5))
+        print("You roll a:", random.randint(0, 5))
     else:
         print("Please check your spelling!")
