@@ -2,15 +2,16 @@
 # Thursday 11th February 2021 - 14:48
 # George Koundouri
 
-print("Welcome to my BMI calculator!")
+print("Welcome to my BMI calculator!")  # A message that welcomes the user to the BMI Calculator
 
-name = input("What is your name?: ")
-height_m = float(input("What is your height in meters?: "))
-weight_kg = float(input("What is your weight in KG?: "))
+name = input("What is your name?: ")  # Assigns name to the users name
+height_m = float(input("What is your height in meters?: "))  # Assigns height_m to the users height in meters
+weight_kg = float(input("What is your weight in KG?: "))  # Assigns weight_kg to the users weight in KG
 
-bmi = weight_kg / (height_m ** 2)
+# Calculates the BMI
+bmi = weight_kg / (height_m ** 2)  # To calculate BMI it is: BMI = weight / height * height
 round(bmi)
-print("Your BMI is: " + str(round(bmi, 2)))
+print("Your BMI is: " + str(round(bmi, 2)))  # Prints what the users BMI is to 2dp (Decimal Places)
 
 if bmi < 18.5:
     print(name + " your BMI falls in underweight range")
